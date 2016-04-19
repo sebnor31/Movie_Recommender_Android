@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:id="@+id/profileLay">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:id="@+id/profileNameLay">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/profileFirstNameEdit"
+                android:padding="10dp"
+                android:hint="@string/registration_first_name"
+                android:singleLine="true" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/profileLastNameEdit"
+                android:padding="10dp"
+                android:hint="@string/registration_last_name"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/profileUsernameEdit"
+            android:layout_gravity="center_horizontal"
+            android:hint="@string/registration_username"
+            android:singleLine="true"
+            android:padding="10dp"
+            android:editable="false" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/profilePwdEdit"
+            android:layout_gravity="center_horizontal"
+            android:hint="@string/registration_password"
+            android:singleLine="true"
+            android:padding="10dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/profileEmailEdit"
+            android:hint="@string/registration_email"
+            android:singleLine="true"
+            android:padding="10dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/profileMajorEdit"
+            android:hint="@string/registration_major"
+            android:singleLine="true"
+            android:padding="10dp"
+            android:layout_gravity="center_horizontal" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:id="@+id/profileInterestEdit"
+            android:layout_weight="0"
+            android:hint="write a short paragraph about your interests...." />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:padding="10dp"
+            android:gravity="center"
+            android:layout_margin="5dp">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/profile_save_button"
+                android:id="@+id/profileSaveButton"
+                android:layout_gravity="center"
+                android:padding="15dp"
+                android:onClick="onSaveClicked"
+                android:nestedScrollingEnabled="false"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="20dp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/profile_cancel_button"
+                android:id="@+id/profileCancelButton"
+                android:padding="15dp"
+                android:layout_gravity="center"
+                android:layout_margin="0dp"
+                android:nestedScrollingEnabled="true"
+                android:onClick="onCancelClicked"
+                android:layout_marginLeft="20dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</ScrollView>
+
+
+

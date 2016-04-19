@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/loginMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="0dp"
+        android:text="@string/login_msg_default"
+        android:padding="10dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="@string/username_hint"
+        android:ems="10"
+        android:id="@+id/usernameEdit"
+        android:layout_margin="10dp"
+        android:padding="10dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="@string/password_hint"
+        android:ems="10"
+        android:id="@+id/pwdEdit"
+        android:layout_margin="10dp"
+        android:padding="10dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/loginButtonsLay"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/loginOkButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login_Login_button"
+            android:layout_gravity="center_horizontal"
+            android:onClick="onLoginOkButtonClicked"
+            android:layout_margin="20dp"
+            android:background="#006699"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/loginCancelButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login_Cancel_button"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="20dp"
+            android:onClick="onLoginCancelButtonClicked"
+            android:background="#006699"
+            android:textColor="#ffffff" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="If you don&apos;t have an account, click here!"
+        android:id="@+id/registerText"
+        android:clickable="true"
+        android:onClick="onRegisterTextClicked"
+        android:textColor="#690dd9"
+        android:textStyle="bold"
+        android:textSize="16dp" />
+
+
+</LinearLayout>

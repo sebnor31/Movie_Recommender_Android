@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">Certified Fresh</string>
+    <string name="welcome_msg">Certified Fresh is improving the user experience in searching for movies.\n\nPlease continue to login or register.</string>
+    <string name="login">Continue</string>
+    <string name="register">register</string>
+    <string name="username_hint">username</string>
+    <string name="password_hint">password</string>
+
+    <string name="login_Login_button">Login</string>
+    <string name="login_Cancel_button">Cancel</string>
+    <string name="login_msg_default">Enter your username and password. Enjoy!</string>
+    <string name="login_msg_unsuccess">Oops...Wrong username or password.\nPlease retry or register.</string>
+    <string name="login_msg_success_student">Login Successful as a Student!</string>
+    <string name="login_msg_success_admin">Login Successful as an Admin!</string>
+    <string name="login_msg_locked_student">Student is locked!!</string>
+    <string name="login_msg_banned_student">Student is banned!!</string>
+
+    <string name="registration_text">Enter login info below</string>
+    <string name="registration_first_name">first</string>
+    <string name="registration_last_name">last</string>
+    <string name="registration_username">username</string>
+    <string name="registration_password">password</string>
+    <string name="registration_email">email</string>
+    <string name="registration_major">major</string>
+    <string name="registration_interests">interests</string>
+    <string name="registration_create_button">Create</string>
+    <string name="registration_cancel_button">Cancel</string>
+    <string name="registration_usertype_student">Student</string>
+    <string name="registration_usertype_admin">Admin</string>
+    <string name="profile_save_button">Save</string>
+    <string name="profile_cancel_button">Cancel</string>
+
+    <string-array name="major">
+        <item>CS</item>
+        <item>ME</item>
+        <item>ECE</item>
+        <item>BME</item>
+    </string-array>
+
+
+    <!-- Go from main to search page-->
+    <string name="button_go_search">Search Movies</string>
+
+    <!-- Main Activity -->
+    <string name="main_movie_title_default">NO TITLE FOUND</string>
+    <string name="main_movie_year_default">YEAR ??</string>
+
+    <!-- Movie Search and movie profile stuff -->
+    <string name="movie_search_title_hint">Title</string>
+    <string name="movie_search_year_hint">Year</string>
+    <string name="button_search">Search</string>
+    <string name="title_activity_movie_profile">movieProfile</string>
+    <string name="title_activity_user_list">UserList</string>
+
+    <!-- Main Activity -->
+    <string name="user_list_username_default">Username</string>
+    <string name="user_list_locked_default">Locked</string>
+    <string name="user_list_banned_default">Banned</string>
+
+    <!-- User Search and user profile stuff -->
+    <string name="user_list_username">Username</string>
+    <string name="user_search_year_hint">Year</string>
+    <!--<string name="button_search">Search</string>-->
+    <!--<string name="title_activity_movie_profile">movieProfile</string>-->
+    <!--<string name="title_activity_user_list">UserList</string>-->
+</resources>

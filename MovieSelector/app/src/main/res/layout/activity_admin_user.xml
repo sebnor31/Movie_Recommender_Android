@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="78dp"
+    android:background="#000000">
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="100dp"
+        android:layout_height="75dp"
+        android:layout_alignParentLeft="true"
+        android:gravity="center"
+        android:text="@string/user_list_username_default"
+        android:textColor="#FFFFFF"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp" />
+
+    <TextView
+        android:id="@+id/lockedView"
+        android:layout_width="wrap_content"
+        android:layout_height="75dp"
+        android:gravity="center"
+        android:text="@string/user_list_locked_default"
+        android:textColor="#FFFFFF"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:layout_below="@+id/view"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/banned"
+        android:layout_width="wrap_content"
+        android:layout_height="75dp"
+        android:gravity="center"
+        android:text="@string/user_list_banned_default"
+        android:textColor="#FFFFFF"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:layout_alignTop="@+id/lockedView"
+        android:layout_toRightOf="@+id/lockedView"
+        android:layout_toEndOf="@+id/lockedView"
+        android:layout_marginLeft="53dp"
+        android:layout_marginStart="53dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#FFFFFF"
+        android:layout_below="@+id/movie_poster"
+        android:id="@+id/view" />
+    <!--
+    what does this do^
+    -->
+
+</RelativeLayout>
